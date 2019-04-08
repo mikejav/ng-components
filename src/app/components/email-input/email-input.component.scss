@@ -1,0 +1,11 @@
+.container-input {
+  cursor: text;
+
+  &.focus {
+    border-color: #17b3a3;
+  }
+
+  .badge {
+    cursor: pointer;
+  }
+}

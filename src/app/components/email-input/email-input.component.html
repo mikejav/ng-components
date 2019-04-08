@@ -1,0 +1,16 @@
+<label
+  for="mainInput"
+  class="form-control position-relative container-input focus"
+  #containerBox
+  [ngClass]="{'focus': isFocused}"
+>
+  <a
+    *ngFor="let email of emails; let index = index"
+    class="badge badge-light border mr-2"
+    (click)="rmEmail(index)"
+  >
+    {{ email }}
+    <i class="icon ion-md-close"></i>
+  </a>
+  <input type="text" id="mainInput" class="border-0 w-auto" #mainInput>
+</label>

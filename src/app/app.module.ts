@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { EmailInputComponent } from './components/email-input/email-input.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EmailInputComponent
   ],
   imports: [
     BrowserModule,

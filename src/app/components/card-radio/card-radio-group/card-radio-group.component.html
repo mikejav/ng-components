@@ -1,0 +1,10 @@
+<ng-container *ngFor="let cardRadio of cardRadios">
+  <div (click)="selectValue(cardRadio.value)">
+    <ng-container *ngTemplateOutlet="cardRadio.templateRef">
+    </ng-container>
+    <ng-container *ngIf="cardRadio.isSelected; else notSelected">+</ng-container>
+    <ng-template #notSelected>-</ng-template>
+    
+    
+  </div>
+</ng-container>
